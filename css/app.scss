@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+body {
+    background-color: white;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+}
+
+nav {
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    top: 0;
+    background: #161515;
+    height: 95vh;
+    padding: 1em;
+    li {
+        a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: .5em;
+            font-size: 1.1em;
+            text-align: right;
+            &:hover {
+                color: green;
+            }
+        }
+    }
+}
+
+.primary_btn {
+    background-color: white;
+    color: black;
+    font-size: small;
+    padding: 1em 1.4em;
+    font-weight: bolder;
+    border-radius: 5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.spotify {
+    color: white;
+    font-weight: bolder;
+    font-size: x-large;
+    display: flex;
+    justify-content: baseline;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    padding-right: 20px;
+}
+
+.navbar {
+    padding: 10px;
+    background-color: black;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        justify-items: baseline;
+    }
+    nav {
+        display: none;
+    }
+}
+
+nav.menu-btn {
+    display: block;
+}
+
+.main {
+    height: 70%;
+    width: 100%;
+    .back {
+        position: absolute;
+        width: 100%;
+        height: 65vh;
+    }
+    .left_col {
+        display: none;
+    }
+    .right_col {
+        height: 42vh;
+        padding: 100px 70px;
+        position: relative;
+        color: white;
+        h1 {
+            padding-bottom: 6%;
+            margin: 0;
+            font-size: xx-large;
+            font-weight: bold;
+        }
+    }
+}
+
+.first_white {
+    width: 90%;
+    margin: 40px 20px;
+    li {
+        display: inline-flex;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    h2 {
+        text-align: center;
+        font-weight: 900;
+        font-size: xx-large;
+    }
+    img {
+        padding: 10px 10px;
+        width: 140px;
+    }
+    h3 {
+        font-weight: bolder;
+        font-size: larger;
+    }
+    p {
+        font-size: medium;
+    }
+}
+
+.first_purple {
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(-155deg, rgb(93, 52, 204) 55%, rgb(219, 63, 219) 155%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    h1 {
+        text-align: center;
+        font-size: 300%;
+        font-weight: bolder;
+    }
+}
+
+.second_white {
+    text-align: center;
+    padding: 20px;
+    li {
+        padding-left: 10px;
+        display: flex;
+        margin: 10px;
+        justify-content: space-between;
+        border: 1px solid rgb(161, 161, 161);
+        p,
+        .up {
+            display: none;
+        }
+    }
+}
+
+.second_purple {
+    width: 100%;
+    height: 55vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-155deg, rgb(93, 52, 204) 55%, rgb(219, 63, 219) 155%);
+    h1 {
+        font-weight: bolder;
+        font-size: 300%;
+    }
+}
+
+.footer {
+    padding: 40px 30px;
+    background-color: black;
+    color: white;
+}
+
+.footer_sec {
+    ul {
+        padding: 20px 0;
+    }
+    li span {
+        text-transform: uppercase;
+        color: gray;
+    }
+    li {
+        padding: 10px;
+        &:hover {
+            color: green;
+        }
+    }
+}
+
+footer {
+    color: grey;
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    align-items: flex-end;
+    li {
+        padding: 5px 10px;
+    }
+    img {
+        width: 13px;
+        height: 13px;
+    }
+    .terms {
+        display: inline;
+        padding-left: 5px;
+    }
+}
+
+@media only screen and (min-width:765px) {
+    .back {
+        width: 100%;
+        height: 80vh;
+    }
+    .first_white {
+        ul {
+            display: flex;
+            // flex-wrap: wrap;
+        }
+    }
+    .options {
+        display: flex;
+        justify-items: left;
+        justify-content: space-between;
+        margin-bottom: 90px;
+    }
+}
+
+@media only screen and (min-width:990px) {
+    .footer_sec {
+        display: flex;
+        justify-content: space-between;
+    }
+    .main {
+        display: flex;
+        .back {
+            height: 75vh;
+        }
+        .container {
+            display: flex;
+        }
+        .left_col {
+            img {
+                width: 40%;
+                padding-left: 30%;
+            }
+            display: block;
+            position: relative;
+        }
+    }
+    .navbar nav {
+        display: contents;
+        background: none;
+        position: unset;
+        justify-content: space-between;
+        height: auto;
+        width: 100%;
+        padding: 0;
+        ul {
+            display: inline-flex;
+            color: white;
+        }
+        .slash {
+            font-size: xx-large;
+            font-weight: lighter;
+            padding-top: 2.4px;
+        }
+        #mobile-exit {
+            display: none;
+        }
+        a {
+            color: white;
+            padding: 1em 1em;
+            font-size: 1em;
+        }
+    }
+    #mobile-open {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .one-line {
+        display: flex;
+        text-align: center;
+        width: 108%;
+        margin: 60px 0;
+        div {
+            display: flex;
+            justify-content: space-around;
+            li {
+                display: grid;
+                justify-items: center;
+                padding: 0 25px;
+                div {
+                    display: grid;
+                }
+            }
+        }
+    }
+    .first_white {
+        margin: 90px 0;
+    }
+    .main .container {
+        display: flex;
+        .left_col {
+            width: 40%;
+            margin-left: 30px;
+        }
+    }
+}
